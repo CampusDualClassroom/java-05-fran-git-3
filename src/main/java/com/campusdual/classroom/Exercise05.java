@@ -19,7 +19,7 @@ public class Exercise05 {
                 System.out.println(n1 + " es menor que " + n2);
             } else if (n1 == n2) {
                 //esto está mal en el texto debería ser n1 igual que n2
-                System.out.println(n1 + " es igual que " + n2);
+                System.out.println(n1 + " es mayor o igual que " + n2);
             } else{
                 System.out.println(n1 + " es mayor o igual que " + n2);
             }
