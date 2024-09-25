@@ -39,7 +39,7 @@ class Exercise05Test {
         this.outContent.reset();
         assertTrue(checkLess, "n1 is greater or equals than n2");
         Exercise05.checkLessOrGreaterEqual(2,2);
-        boolean checkEquals = this.outContent.toString().contains(" es mayor o igual que ");
+        boolean checkEquals = this.outContent.toString().contains(" es igual que ");
         this.outContent.reset();
         assertTrue(checkEquals, "n1 is not equals than n2");
         Exercise05.checkLessOrGreaterEqual(6,2);
@@ -52,11 +52,11 @@ class Exercise05Test {
     @DisplayName("Check multiply")
     void testCheckMultiply() {
         Exercise05.checkMultiply(6,3);
-        boolean checkMulti = this.outContent.toString().contains(" es múltiplo de ");
+        boolean checkMulti = this.outContent.toString().contains(" es multiplo de ");
         this.outContent.reset();
         assertTrue(checkMulti, "n1 not multiply of n2");
         Exercise05.checkMultiply(3,6);
-        boolean checkNotMulti = this.outContent.toString().contains(" no es múltiplo de ");
+        boolean checkNotMulti = this.outContent.toString().contains(" no es multiplo de ");
         this.outContent.reset();
         assertTrue(checkNotMulti, "n1 multiply of n2");
     }
